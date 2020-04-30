@@ -1561,6 +1561,138 @@ eval("module.exports = function(module) {\n\tif (!module.webpackPolyfill) {\n\t\
 
 /***/ }),
 
+/***/ "./src/js/GameClips.js":
+/*!*****************************!*\
+  !*** ./src/js/GameClips.js ***!
+  \*****************************/
+/*! exports provided: Trailer */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Trailer\", function() { return Trailer; });\nvar Trailer = function Trailer(clip) {\n  return \"\\n      <div class=\\\"my-3\\\">\\n        <div class=\\\"redtext ml-5\\\">\\n          TRAILER\\n        </div>\\n        <div class=\\\"w-75 mx-auto my-3\\\">\\n          <video controls width=\\\"100%\\\">\\n            <source src=\\\"\".concat(clip.clip, \"\\\">\\n            Sorry, your browser doesn't support embedded videos.\\n          </video>\\n        </div>\\n      </div>\\n    \");\n};\n\n\n\n//# sourceURL=webpack:///./src/js/GameClips.js?");
+
+/***/ }),
+
+/***/ "./src/js/GameDetailsRequest.js":
+/*!**************************************!*\
+  !*** ./src/js/GameDetailsRequest.js ***!
+  \**************************************/
+/*! exports provided: GameDetailsRequest */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"GameDetailsRequest\", function() { return GameDetailsRequest; });\nvar GameDetailsRequest = function GameDetailsRequest(tags) {\n  var tagsList = [];\n  tags.forEach(function (tag) {\n    tagsList.push(tag.name);\n    console.log(tagsList);\n  });\n  return \"\\n    <div> \".concat(tagsList, \" </div>\\n    \");\n};\n\n\n\n//# sourceURL=webpack:///./src/js/GameDetailsRequest.js?");
+
+/***/ }),
+
+/***/ "./src/js/GameDevelopers.js":
+/*!**********************************!*\
+  !*** ./src/js/GameDevelopers.js ***!
+  \**********************************/
+/*! exports provided: GameDevelopers */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"GameDevelopers\", function() { return GameDevelopers; });\nvar GameDevelopers = function GameDevelopers(developers) {\n  var developersList = [];\n  developers.forEach(function (developer) {\n    developersList.push(developer.name);\n    console.log(developersList);\n  });\n  return \"\\n    <div> \".concat(developersList, \" </div>\\n    \");\n};\n\n\n\n//# sourceURL=webpack:///./src/js/GameDevelopers.js?");
+
+/***/ }),
+
+/***/ "./src/js/GameGenres.js":
+/*!******************************!*\
+  !*** ./src/js/GameGenres.js ***!
+  \******************************/
+/*! exports provided: GameGenres */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"GameGenres\", function() { return GameGenres; });\nvar GameGenres = function GameGenres(genres) {\n  var genresList = [];\n  genres.forEach(function (genre) {\n    genresList.push(genre.name);\n    console.log(genresList);\n  });\n  return \"\\n    <div> \".concat(genresList, \" </div>\\n    \");\n};\n\n\n\n//# sourceURL=webpack:///./src/js/GameGenres.js?");
+
+/***/ }),
+
+/***/ "./src/js/GamePublisher.js":
+/*!*********************************!*\
+  !*** ./src/js/GamePublisher.js ***!
+  \*********************************/
+/*! exports provided: GamePublisher */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"GamePublisher\", function() { return GamePublisher; });\nvar GamePublisher = function GamePublisher(publishers) {\n  var publishersList = [];\n  publishers.forEach(function (publisher) {\n    publishersList.push(publisher.name);\n    console.log(publishersList);\n  });\n  return \"\\n    <div> \".concat(publishersList, \" </div>\\n    \");\n};\n\n\n\n//# sourceURL=webpack:///./src/js/GamePublisher.js?");
+
+/***/ }),
+
+/***/ "./src/js/GameStores.js":
+/*!******************************!*\
+  !*** ./src/js/GameStores.js ***!
+  \******************************/
+/*! exports provided: GameStores */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"GameStores\", function() { return GameStores; });\nvar GameStores = function GameStores(stores) {\n  var storesList = [];\n  stores.forEach(function (store) {\n    storesList.push(store.url);\n    console.log(storesList);\n  });\n  return \"\\n    <div> \".concat(storesList, \" </div>\\n    \");\n};\n\n\n\n//# sourceURL=webpack:///./src/js/GameStores.js?");
+
+/***/ }),
+
+/***/ "./src/js/HeroGame.js":
+/*!****************************!*\
+  !*** ./src/js/HeroGame.js ***!
+  \****************************/
+/*! exports provided: HeroGame */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"HeroGame\", function() { return HeroGame; });\nvar HeroGame = function HeroGame(url) {\n  return \"\\n    <div class=\\\"jumbotron jumbotron-fluid hero-container\\\" style=\\\"background-image: url(\".concat(url, \"); background-size: cover; background-position: middle; background-repeat: no-repeat; position:relative\\\"\\\">\\n     <div class=\\\"website_button px-3 py-1 d-flex justify-content-between align-items-center\\\">\\n       <div class=\\\"\\\">\\n       <button type=\\\"button\\\" class=\\\"btn btn-danger\\\" id=\\\"checkwebsite\\\">Check website</button> <br>\\n       </div>\\n       <i class=\\\"fas fa-caret-right ml-3\\\"></i>\\n     </div>\\n   </div>\\n    \");\n};\n\n\n\n//# sourceURL=webpack:///./src/js/HeroGame.js?");
+
+/***/ }),
+
+/***/ "./src/js/Home.js":
+/*!************************!*\
+  !*** ./src/js/Home.js ***!
+  \************************/
+/*! exports provided: Home */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Home\", function() { return Home; });\n/* harmony import */ var _cards__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./cards */ \"./src/js/cards.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_1__);\n\n\n\nwindow.addEventListener(\"DOMContentLoaded\", function () {\n  document.querySelector(\"input\").addEventListener(\"keydown\", function (event) {\n    if (event.keyCode == 13) {\n      event.preventDefault();\n    }\n\n    var keywordInputValue = document.querySelector(\"input[type='text']\").value; // createUrl(keywordInputValue);\n    // selector.innerHTML = \"\";\n\n    console.log(keywordInputValue);\n    Home(keywordInputValue); // requestSearch(url);\n  });\n});\n\nvar showMore = function showMore() {\n  console.log(\"hello\");\n  jquery__WEBPACK_IMPORTED_MODULE_1___default()(\"#boxs .box:hidden\").slice(0, 9).slideDown();\n\n  if (jquery__WEBPACK_IMPORTED_MODULE_1___default()(\"#boxs .box:hidden\").length == 0) {\n    jquery__WEBPACK_IMPORTED_MODULE_1___default()(\"#showmore\").fadeOut(\"slow\");\n    preparePage();\n  }\n};\n\nvar Home = function Home() {\n  var keywordInputValue = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : \"\";\n\n  var preparePage = function preparePage() {\n    var cleanedArgument = keywordInputValue.replace(/\\s+/g, \"-\");\n    var articles = \"\";\n    var games = \"\";\n    var platformes = \"\";\n\n    var fetchList = function fetchList(url, keywordInputValue) {\n      var finalURL = \"https://api.rawg.io/api/games?dates=2020-01-01,2021-10-10&ordering=-added\";\n\n      if (keywordInputValue) {\n        finalURL = url + \"?search=\" + keywordInputValue;\n      }\n\n      fetch(\"\".concat(finalURL)).then(function (response) {\n        return response.json();\n      }).then(function (response) {\n        response.results.forEach(function (game) {\n          games += Object(_cards__WEBPACK_IMPORTED_MODULE_0__[\"GameCard\"])(game.name, game.background_image, game.platforms, game.id, game.released, game.rating, game.ratings_count, game.tags);\n        });\n        document.querySelector(\".page-list .games\").innerHTML = games;\n      }); // fetch(`${finalURL}`)\n      // \t.then((response) => response.json())\n      // \t.then((response) => {\n      // \t\tlet showNine = response.results.slice(0, 9);\n      // \t\tshowNine.forEach((article) => {\n      // \t\t\tconsole.log(response.results.length);\n      // \t\t\tconsole.log(typeof response.results);\n      // \t\t\tconsole.log(response.results);\n      // \t\t\tarticles += `\n      // \t\t<div class=\"cardGame\">\n      // \t\t<img src='${article.background_image}' alt=''width=\"300\" height=\"220\" />\n      // \t\t  <h2>${article.name}</h2>\n      // \t\t  <h6>${article.released}</h6>\n      // \t\t  <h6>Platforms:${article.platforms[0]}</h6>\n      // \t\t  <a href = \"#pagedetail/${article.id}\">${article.id}</a>\n      // \t\t</div>\n      // \t  `;\n      // \t\t});\n      // \tdocument.querySelector(\".page-list .articles\").innerHTML = articles;\n      // });\n    };\n\n    fetchList(\"https://api.rawg.io/api/games\", cleanedArgument);\n  };\n\n  var render = function render() {\n    pageContent.innerHTML = \"\\n\\n\\t\\t<section id=\\\"boxs\\\" class=\\\"page-list whitetext\\\">\\n\\t\\t<h1 class=\\\"whitetext typo-nunito mt-5 ml-5\\\">Welcome,</h1>\\n\\t\\t<p class=\\\"whitetext ml-5\\\">\\n\\t\\t\\tThe Hyper Programe is the world's premier event for computer and video\\n\\t\\t\\tgames and related products. At The Hyper Progame, the video game industry\\u2019s top talent pack the Los Angeles Convention Center, connecting tens of thousands of the best, brightest, and most innovative in the interactive entertainment industry. For three exciting days, leading-edge companies, groundbreaking new technologies, and never-before-seen products will be showcased. The Hyper Progame connects you with both new and existing partners, industry executives, gamers, and social influencers providing unprecedented exposure\\n\\t\\t</p>\\n\\t\\t<div class=\\\"dropdown ml-5\\\">\\n\\t\\t<button class=\\\"btn btn-danger dropdown-toggle\\\" type=\\\"button\\\" id=\\\"dropdownMenuButton\\\" data-toggle=\\\"dropdown\\\" aria-haspopup=\\\"true\\\" aria-expanded=\\\"false\\\">\\n\\t\\t  Platform: any\\n\\t\\t</button>\\n\\t\\t<div class=\\\"dropdown-menu\\\" aria-labelledby=\\\"dropdownMenuButton\\\">\\n\\t\\t  <a class=\\\"dropdown-item\\\" href=\\\"#\\\">PlayStation 4</a>\\n\\t\\t  <a class=\\\"dropdown-item\\\" href=\\\"#\\\">Xbox One</a>\\n\\t\\t  <a class=\\\"dropdown-item\\\" href=\\\"#\\\">PC</a>\\n\\t\\t  <a class=\\\"dropdown-item\\\" href=\\\"#\\\">Linux</a>\\n\\t\\t  <a class=\\\"dropdown-item\\\" href=\\\"#\\\">maxOS</a>\\n\\t\\t  <a class=\\\"dropdown-item\\\" href=\\\"#\\\">Android</a>\\n\\t\\t  <a class=\\\"dropdown-item\\\" href=\\\"#\\\">iOS</a>\\n\\t\\t  <a class=\\\"dropdown-item\\\" href=\\\"#\\\">Nintendo Switch</a>\\n\\t\\t</div> \\n\\t  </div> <br>\\n\\t\\t  <div class=\\\"games d-flex flex-wrap justify-content-around whitetext ml-5 mr-5\\\">...loading</div>\\n\\t\\t  <div class=\\\"col-md-12 text-center\\\">\\n\\t\\t  <button type=\\\"button\\\" class=\\\"btn btn-danger\\\" id=\\\"showmore\\\">Show more</button> <br>\\n\\t\\t  </div>\\n\\t\\t</section>\\n\\t  \";\n    document.getElementById(\"showmore\").onclick = showMore;\n    preparePage();\n  };\n\n  render();\n};\n\n\n\n//# sourceURL=webpack:///./src/js/Home.js?");
+
+/***/ }),
+
+/***/ "./src/js/PageDetail.js":
+/*!******************************!*\
+  !*** ./src/js/PageDetail.js ***!
+  \******************************/
+/*! exports provided: PageDetail */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"PageDetail\", function() { return PageDetail; });\n/* harmony import */ var _HeroGame__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HeroGame */ \"./src/js/HeroGame.js\");\n/* harmony import */ var _GameDetailsRequest__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./GameDetailsRequest */ \"./src/js/GameDetailsRequest.js\");\n/* harmony import */ var _platforms__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./platforms */ \"./src/js/platforms.js\");\n/* harmony import */ var _GameGenres__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./GameGenres */ \"./src/js/GameGenres.js\");\n/* harmony import */ var _GameDevelopers__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./GameDevelopers */ \"./src/js/GameDevelopers.js\");\n/* harmony import */ var _GameStores__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./GameStores */ \"./src/js/GameStores.js\");\n/* harmony import */ var _GamePublisher__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./GamePublisher */ \"./src/js/GamePublisher.js\");\n/* harmony import */ var _GameClips__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./GameClips */ \"./src/js/GameClips.js\");\n\n\n\n\n\n\n\n\n\nvar PageDetail = function PageDetail(argument) {\n  var preparePage = function preparePage() {\n    var cleanedArgument = argument.replace(/\\s+/g, \"-\");\n    var articleContent = \"\";\n\n    var fetchGame = function fetchGame(url, argument) {\n      var finalURL = url + argument;\n      fetch(\"\".concat(finalURL)).then(function (response) {\n        return response.json();\n      }).then(function (response) {\n        console.log(response);\n        var name = response.name,\n            released = response.released,\n            description = response.description,\n            rating = response.rating,\n            ratings_count = response.ratings_count,\n            background_image = response.background_image,\n            tags = response.tags,\n            platforms = response.platforms,\n            genres = response.genres,\n            developers = response.developers,\n            website = response.website,\n            stores = response.stores,\n            publishers = response.publishers,\n            clip = response.clip;\n        var articleDOM = document.querySelector(\".page-detail .article\");\n        articleDOM.querySelector(\"div.hero\").innerHTML += Object(_HeroGame__WEBPACK_IMPORTED_MODULE_0__[\"HeroGame\"])(background_image);\n        articleDOM.querySelector(\"h1.title\").innerHTML = name;\n        articleDOM.querySelector(\"p.release-date span\").innerHTML = released;\n        articleDOM.querySelector(\"p.description\").innerHTML = description;\n        articleDOM.querySelector(\"p.rating span\").innerHTML = rating;\n        articleDOM.querySelector(\"p.website span\").innerHTML = website;\n        articleDOM.querySelector(\"p.ratings_count span\").innerHTML = ratings_count;\n        articleDOM.querySelector(\"p.tags span\").innerHTML += Object(_GameDetailsRequest__WEBPACK_IMPORTED_MODULE_1__[\"GameDetailsRequest\"])(tags);\n        articleDOM.querySelector(\"p.platforms span\").innerHTML += Object(_platforms__WEBPACK_IMPORTED_MODULE_2__[\"GamePlatforms\"])(platforms);\n        articleDOM.querySelector(\"p.genres span\").innerHTML += Object(_GameGenres__WEBPACK_IMPORTED_MODULE_3__[\"GameGenres\"])(genres);\n        articleDOM.querySelector(\"p.developers span\").innerHTML += Object(_GameDevelopers__WEBPACK_IMPORTED_MODULE_4__[\"GameDevelopers\"])(developers);\n        articleDOM.querySelector(\"p.stores span\").innerHTML += Object(_GameStores__WEBPACK_IMPORTED_MODULE_5__[\"GameStores\"])(stores);\n        articleDOM.querySelector(\"p.publishers span\").innerHTML += Object(_GamePublisher__WEBPACK_IMPORTED_MODULE_6__[\"GamePublisher\"])(publishers);\n        articleDOM.querySelector(\"div.clip\").innerHTML += Object(_GameClips__WEBPACK_IMPORTED_MODULE_7__[\"Trailer\"])(clip);\n      });\n    };\n\n    fetchGame(\"https://api.rawg.io/api/games/\", cleanedArgument);\n  };\n\n  var render = function render() {\n    pageContent.innerHTML = \"\\n\\t\\t<section class=\\\"page-detail whitetext\\\">\\n\\t\\t  <div class=\\\"article\\\"><br><br>\\n\\t\\t  <div class=\\\"hero\\\" > </div>\\n\\t\\t\\t<h1 class=\\\"title whitetext ml-5\\\"></h1>\\n\\t\\t\\t<p class=\\\"release-date whitetext ml-5\\\">Release date : <span></span></p>\\n\\t\\t\\t<p class=\\\"description whitetext ml-5\\\"></p>\\n\\t\\t\\t<p class=\\\"rating redtext ml-5\\\"><span></span>/5</p>\\n\\t\\t\\t<p class=\\\"ratings_count redtext ml-5\\\"> <span></span> votes</p>\\n\\t\\t\\t<p class=\\\"tags whitetext ml-5\\\"> <span></span> tags</p>\\n\\t\\t\\t<p class=\\\"platforms whitetext ml-5\\\"> <span></span></p>\\n\\t\\t\\t<p class=\\\"genres whitetext ml-5\\\"> Genres:<span></span></p>\\n\\t\\t\\t<p class=\\\"developers whitetext ml-5\\\"> Developer:<span></span></p>\\n\\t\\t\\t<p class=\\\"website whitetext ml-5\\\"> Game website: <span></span></p>\\n\\t\\t\\t<p class=\\\"stores whitetext ml-5\\\"> Stores: <span></span></p>\\n\\t\\t\\t<p class=\\\"publishers whitetext ml-5\\\"> Publishers: <span></span></p>\\n\\t\\t\\t<div class=\\\"clip\\\" > </div>\\n\\t\\t  </div>\\n\\t\\t  </div>\\n\\t\\t</section>\\n\\t  \";\n    preparePage();\n  };\n\n  render();\n};\n\n\n\n//# sourceURL=webpack:///./src/js/PageDetail.js?");
+
+/***/ }),
+
+/***/ "./src/js/PageList.js":
+/*!****************************!*\
+  !*** ./src/js/PageList.js ***!
+  \****************************/
+/*! exports provided: PageList */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"PageList\", function() { return PageList; });\nvar PageList = function PageList() {\n  var argument = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : \"\";\n\n  var preparePage = function preparePage() {\n    var cleanedArgument = argument.replace(/\\s+/g, \"-\");\n    var articles = \"\";\n\n    var fetchList = function fetchList(url, argument) {\n      var finalURL = \"https://api.rawg.io/api/games?dates=2020-01-01,2021-10-10&ordering=-added\";\n\n      if (argument) {\n        finalURL = url + \"?search=\" + argument;\n      }\n\n      fetch(\"\".concat(finalURL)).then(function (response) {\n        return response.json();\n      }).then(function (response) {\n        response.results.forEach(function (article) {\n          articles += \"\\n\\t\\t\\t\\t\\t<div class=\\\"cardGame\\\">\\n\\t\\t\\t\\t\\t  <h1>\".concat(article.name, \"</h1>\\n\\t\\t\\t\\t\\t  <h2>\").concat(article.released, \"</h2>\\n\\t\\t\\t\\t\\t  <img src='\").concat(article.background_image, \"' alt=''width=\\\"130\\\" height=\\\"150\\\" />\\n\\t\\t\\t\\t\\t  <a href = \\\"#pagedetail/\").concat(article.id, \"\\\">\").concat(article.id, \"</a>\\n\\t\\t\\t\\t\\t</div>\\n\\t\\t\\t\\t  \");\n        });\n        document.querySelector(\".page-list .articles\").innerHTML = articles;\n        console.log(article.backround_image);\n      });\n    };\n\n    fetchList(\"https://api.rawg.io/api/games\", cleanedArgument);\n  };\n\n  var render = function render() {\n    pageContent.innerHTML = \"\\n\\t\\t<section class=\\\"page-list whitetext\\\">\\n\\t\\t  <div class=\\\"articles whitetext\\\">...loading</div>\\n\\t\\t</section>\\n\\t  \";\n    preparePage();\n  };\n\n  render();\n};\n\n\n\n//# sourceURL=webpack:///./src/js/PageList.js?");
+
+/***/ }),
+
+/***/ "./src/js/cards.js":
+/*!*************************!*\
+  !*** ./src/js/cards.js ***!
+  \*************************/
+/*! exports provided: GameCard */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"GameCard\", function() { return GameCard; });\n/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! moment */ \"./node_modules/moment/moment.js\");\n/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_0__);\n\n\nvar GameCard = function GameCard(name, image_url, platforms, id, released, rating, ratings_count, tags) {\n  var platformsList = [];\n  var tagsList = [];\n  platforms.forEach(function (platform) {\n    platformsList.push(platform.platform.name);\n  });\n  tags.forEach(function (tag) {\n    tagsList.push(tag.name);\n  });\n  var m = moment__WEBPACK_IMPORTED_MODULE_0___default()(released); // console.log(platformsList);\n  // console.log(tagsList);\n\n  console.log(m.format(\"MMM DD, YYYY\"));\n  return \"\\n \\n      <div class=\\\"card col-lg-3 mx-1 my-2 mb-5 px-0 box container\\\">\\n        <img class=\\\"card-img-top h-75\\\" src=\\\"\".concat(image_url, \"\\\" alt=''width=\\\"300\\\" height=\\\"220\\\">\\n        <div class=\\\"card-body\\\">\\n          <h4><a href = \\\"#pagedetail/\").concat(id, \"\\\" class=\\\"border-0  ml-0 whitetext\\\">\").concat(name, \"</a></h4>\\n          <div class=\\\"platforms d-flex justify-content-around hover\\\">\\n            \").concat(platformsList, \"\\n            <div class=\\\"overlay\\\">\\n            <div class=\\\"textsize\\\">\").concat(m.format(\"MMM DD, YYYY\"), \" </div><br>\\n            <div class=\\\"textsize\\\"> \").concat(rating, \"/5 - \").concat(ratings_count, \" votes</div><br>\\n            <div id=\\\"smalltext\\\"> \").concat(tagsList.slice(0, 6), \" </div>\\n  </div>\\n\\n            </div>\\n          </div>\\n        </div>\\n      </div>\\n    \");\n};\n\n\n\n//# sourceURL=webpack:///./src/js/cards.js?");
+
+/***/ }),
+
 /***/ "./src/js/index.js":
 /*!*************************!*\
   !*** ./src/js/index.js ***!
@@ -1569,7 +1701,31 @@ eval("module.exports = function(module) {\n\tif (!module.webpackPolyfill) {\n\t\
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sass_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../sass/styles.scss */ \"./src/sass/styles.scss\");\n/* harmony import */ var _sass_styles_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_sass_styles_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(bootstrap__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! moment */ \"./node_modules/moment/moment.js\");\n/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_2__);\n\n\n\nconsole.log(\"Hello world !!\");\nconsole.log(moment__WEBPACK_IMPORTED_MODULE_2___default()().format(\"MMMM Do YYYY\"));\nconsole.log(moment__WEBPACK_IMPORTED_MODULE_2___default()(\"20111031\", \"YYYYMMDD\").fromNow()); // 8 years ago\n\nconsole.log(moment__WEBPACK_IMPORTED_MODULE_2___default()().subtract(10, \"days\").calendar()); // 05/27/2019\n\nconsole.log(\"TEST\", \"127.0.0.1\");\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sass_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../sass/styles.scss */ \"./src/sass/styles.scss\");\n/* harmony import */ var _sass_styles_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_sass_styles_scss__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! bootstrap */ \"./node_modules/bootstrap/dist/js/bootstrap.js\");\n/* harmony import */ var bootstrap__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(bootstrap__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _routes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./routes */ \"./src/js/routes.js\");\n\n // import \"@fortawesome/fontawesome-free/js/all.js\";\n\n\nvar pageArgument;\n\nvar setRoute = function setRoute() {\n  var path = window.location.hash.substring(1).split(\"/\");\n  pageArgument = path[1] || \"\";\n  console.log(path);\n  console.log(pageArgument);\n  console.log(\"TEST\", \"127.0.0.1\");\n  var pageContent = document.getElementById(\"pageContent\");\n  _routes__WEBPACK_IMPORTED_MODULE_2__[\"routes\"][path[0]](pageArgument);\n  console.log(_routes__WEBPACK_IMPORTED_MODULE_2__[\"routes\"]);\n  return true;\n};\n\nwindow.addEventListener(\"hashchange\", function () {\n  return setRoute();\n});\nwindow.addEventListener(\"DOMContentLoaded\", function () {\n  return setRoute();\n}); // export { setRoute };\n\n//# sourceURL=webpack:///./src/js/index.js?");
+
+/***/ }),
+
+/***/ "./src/js/platforms.js":
+/*!*****************************!*\
+  !*** ./src/js/platforms.js ***!
+  \*****************************/
+/*! exports provided: GamePlatforms */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"GamePlatforms\", function() { return GamePlatforms; });\nvar GamePlatforms = function GamePlatforms(platforms) {\n  var platformsList = [];\n  platforms.forEach(function (platform) {\n    platformsList.push(platform.platform.name);\n    console.log(platformsList);\n  });\n  return \"\\n    <div> \".concat(platformsList, \" </div>\\n    \");\n};\n\n\n\n//# sourceURL=webpack:///./src/js/platforms.js?");
+
+/***/ }),
+
+/***/ "./src/js/routes.js":
+/*!**************************!*\
+  !*** ./src/js/routes.js ***!
+  \**************************/
+/*! exports provided: routes */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"routes\", function() { return routes; });\n/* harmony import */ var _PageDetail__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./PageDetail */ \"./src/js/PageDetail.js\");\n/* harmony import */ var _Home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Home */ \"./src/js/Home.js\");\n/* harmony import */ var _PageList__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./PageList */ \"./src/js/PageList.js\");\n\n\n\nvar routes = {\n  \"\": _Home__WEBPACK_IMPORTED_MODULE_1__[\"Home\"],\n  pagelist: _PageList__WEBPACK_IMPORTED_MODULE_2__[\"PageList\"],\n  pagedetail: _PageDetail__WEBPACK_IMPORTED_MODULE_0__[\"PageDetail\"]\n};\n\n//# sourceURL=webpack:///./src/js/routes.js?");
 
 /***/ }),
 

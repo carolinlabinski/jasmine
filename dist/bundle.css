@@ -9876,14 +9876,151 @@ h3 {
   }
 }
 @font-face {
-  font-family: "Big Noodles";
-  src: url(fonts/e2ebffa44fbb63381589b4c62164a7a7.ttf);
+  font-family: "Nunito";
+  src: url(fonts/45ea1be74e8fb8d959b822c952ffe9ab.ttf);
 }
-p {
-  color: #ff1414;
-  font-family: "Big Noodles";
+h1 {
+  font-family: "Nunito";
+  font-size: 65px;
 }
 
 body {
-  background-image: url(images/f9624bb7b593f25054295990b92e765f.jpg);
+  background-color: black;
 }
+
+.row {
+  width: 100%;
+}
+
+#checkwebsite {
+  position: absolute;
+  right: 150px;
+  margin-top: 450px;
+}
+
+.whitetext {
+  color: white;
+}
+
+.title {
+  font-family: "Nunito";
+  font-size: 65px;
+}
+
+.typo-nunito {
+  font-family: "Nunito";
+}
+
+.card-body {
+  background-color: black;
+}
+
+.card {
+  border: none;
+  transition: 0.5s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(20px);
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 75%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: black;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left;
+  font-size: 25px;
+}
+
+.redtext {
+  color: #d60000;
+}
+
+form {
+  position: absolute;
+  right: 200px;
+}
+
+.fake-form input[type=text] {
+  border-radius: 30px;
+  height: 40px;
+  padding-left: 20px;
+}
+
+input {
+  background-color: black;
+  border: solid 1px lightgrey;
+}
+
+#boxs .box:nth-child(n+10) {
+  display: none;
+}
+
+.jumbotron {
+  height: 600px;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  position: relative;
+  color: #069;
+}
+a:after,
+a:visited:after {
+  content: "";
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  background: #069;
+  transition: 0.2s;
+}
+a:hover:after,
+a:visited:hover:after {
+  width: 100%;
+}
+a.block,
+a:visited.block {
+  display: block;
+  padding: 0.5em;
+}
+a.block:hover,
+a:visited.block:hover {
+  background: #eee;
+}
+
+/* Create two equal columns that floats next to each other */

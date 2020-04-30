@@ -1,17 +1,193 @@
 @import "~bootstrap/scss/bootstrap";
 
 @font-face {
-    font-family: "Big Noodles";
-    src: url("../fonts/big_noodle_titling.ttf");
+	// font-family: "Big Noodles";
+	// src: url("../fonts/nunito-semibold.ttf");
+	font-family: "Nunito";
+	src: url("../fonts/nunito-semibold.ttf");
 }
 
-$red: rgb(255, 20, 20);
+$red: rgb(214, 0, 0);
 
-p {
-    color: $red;
-    font-family: "Big Noodles";
+h1 {
+	font-family: "Nunito";
+	font-size: 65px;
 }
 
 body {
-    background-image: url("../img/cat.jpg");
+	// background-image: url("../img/cat.jpg");
+	background-color: black;
 }
+
+.row {
+	width: 100%;
+}
+
+#checkwebsite {
+	position: absolute;
+	right: 150px;
+	margin-top: 450px;
+}
+
+// #loupe {
+// 	src: url("../img/search.svg");
+// }
+
+.whitetext {
+	color: white;
+}
+.title {
+	font-family: "Nunito";
+	font-size: 65px;
+}
+
+.typo-nunito {
+	font-family: "Nunito";
+}
+
+.card-body {
+	background-color: black;
+}
+
+.card {
+	border: none;
+	transition: 0.5s ease-in-out;
+}
+
+.card:hover {
+	transform: translateY(20px);
+}
+.container {
+	position: relative;
+	width: 50%;
+}
+
+.image {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 75%;
+	width: 100%;
+	opacity: 0;
+	transition: 0.5s ease;
+	background-color: black;
+}
+
+.container:hover .overlay {
+	opacity: 1;
+}
+
+.text {
+	color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: left;
+	font-size: 25px;
+}
+
+.redtext {
+	color: $red;
+}
+
+// .fake-form {
+// 	display: flex;
+// 	flex-direction: column;
+// }
+form {
+	position: absolute;
+	right: 200px;
+}
+
+.fake-form input[type="text"] {
+	border-radius: 30px;
+	height: 40px;
+	padding-left: 20px;
+}
+
+input {
+	background-color: black;
+	border: solid 1px lightgrey;
+}
+
+#boxs .box:nth-child(n + 10) {
+	display: none;
+}
+
+.jumbotron {
+	height: 600px;
+}
+a,
+a:visited {
+	text-decoration: none;
+	position: relative;
+	color: #069;
+
+	&:after {
+		content: "";
+		height: 3px;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 0%;
+		background: #069;
+		transition: 0.2s;
+	}
+
+	&:hover:after {
+		width: 100%;
+	}
+
+	&.block {
+		display: block;
+		padding: 0.5em;
+
+		&:hover {
+			background: #eee;
+		}
+	}
+}
+
+// #hover-layout {
+// 	font-size: 14px;
+// }
+
+// .fake-form input[type="submit"] {
+// 	border-radius: 30px;
+// 	border: solid 1px lightgrey;
+// 	height: 30px;
+// 	margin-left: 30px;
+// 	width: 200px;
+// 	background: #e60228cb;
+// 	color: white;
+// 	cursor: pointer;
+// }
+// .form-control {
+// 	font-family: "FontAwesome";
+// }
+
+/* Create two equal columns that floats next to each other */
+// .column {
+// 	// float: left;
+// 	// width: 50%;
+// 	// padding: 10px;
+// 	// height: 100px; /* Should be removed. Only for demonstration */
+// }
+
+// /* Clear floats after the columns */
+// .row:after {
+// 	content: "";
+// 	// display: table;
+// 	// clear: both;
+// }

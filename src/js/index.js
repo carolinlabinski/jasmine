@@ -1,11 +1,23 @@
 import "../sass/styles.scss";
 import "bootstrap";
-import moment from "moment";
+// import "@fortawesome/fontawesome-free/js/all.js";
+import { routes } from "./routes";
 
-console.log("Hello world !!")
+let pageArgument;
 
-console.log(moment().format("MMMM Do YYYY"));
-console.log(moment("20111031", "YYYYMMDD").fromNow()); // 8 years ago
-console.log(moment().subtract(10, "days").calendar()); // 05/27/2019
+const setRoute = () => {
+	let path = window.location.hash.substring(1).split("/");
+	pageArgument = path[1] || "";
+	console.log(path);
+	console.log(pageArgument);
+	console.log("TEST", process.env.DB_HOST);
 
-console.log("TEST", process.env.DB_HOST);
+	var pageContent = document.getElementById("pageContent");
+	routes[path[0]](pageArgument);
+	console.log(routes);
+	return true;
+};
+
+window.addEventListener("hashchange", () => setRoute());
+window.addEventListener("DOMContentLoaded", () => setRoute());
+// export { setRoute };
