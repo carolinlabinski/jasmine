@@ -1,6 +1,6 @@
 # TDD with Jasmine
 
-Webpack based appliaction
+Webpack based application
 
 To run the tests, please run npm test.
 
