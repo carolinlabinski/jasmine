@@ -8,16 +8,13 @@ window.addEventListener("DOMContentLoaded", () => {
 		}
 		const keywordInputValue = document.querySelector("input[type='text']")
 			.value;
-		// createUrl(keywordInputValue);
-		// selector.innerHTML = "";
 		console.log(keywordInputValue);
 		Home(keywordInputValue);
-		// requestSearch(url);
 	});
 });
 
 const showMore = () => {
-	console.log("hello");
+	console.log("helloooo");
 	$("#boxs .box:hidden").slice(0, 9).slideDown();
 	if ($("#boxs .box:hidden").length == 0) {
 		$("#showmore").fadeOut("slow");
@@ -34,7 +31,7 @@ const Home = (keywordInputValue = "") => {
 
 		const fetchList = (url, keywordInputValue) => {
 			let finalURL =
-				"https://api.rawg.io/api/games?dates=2020-01-01,2021-10-10&ordering=-added";
+				"http://api.rawg.io/api/games?dates=2020-01-01,2021-10-10&ordering=-added";
 			if (keywordInputValue) {
 				finalURL = url + "?search=" + keywordInputValue;
 			}
@@ -55,31 +52,9 @@ const Home = (keywordInputValue = "") => {
 					});
 					document.querySelector(".page-list .games").innerHTML = games;
 				});
-
-			// fetch(`${finalURL}`)
-			// 	.then((response) => response.json())
-			// 	.then((response) => {
-			// 		let showNine = response.results.slice(0, 9);
-			// 		showNine.forEach((article) => {
-			// 			console.log(response.results.length);
-			// 			console.log(typeof response.results);
-			// 			console.log(response.results);
-			// 			articles += `
-
-			// 		<div class="cardGame">
-			// 		<img src='${article.background_image}' alt=''width="300" height="220" />
-			// 		  <h2>${article.name}</h2>
-			// 		  <h6>${article.released}</h6>
-			// 		  <h6>Platforms:${article.platforms[0]}</h6>
-			// 		  <a href = "#pagedetail/${article.id}">${article.id}</a>
-			// 		</div>
-			// 	  `;
-			// 		});
-			// 	document.querySelector(".page-list .articles").innerHTML = articles;
-			// });
 		};
 
-		fetchList("https://api.rawg.io/api/games", cleanedArgument);
+		fetchList("http://api.rawg.io/api/games", cleanedArgument);
 	};
 
 	const render = () => {

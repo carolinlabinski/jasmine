@@ -5,7 +5,7 @@ const GameStores = (stores) => {
 		console.log(storesList);
 	});
 	return `
-    <div> ${storesList} </div>
+    <a> href="${storesList}" </a>
     `;
 };
 export { GameStores };

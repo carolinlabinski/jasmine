@@ -34,18 +34,20 @@ const PageDetail = (argument) => {
 						stores,
 						publishers,
 						clip,
+						id,
 					} = response;
 
 					let articleDOM = document.querySelector(".page-detail .article");
 
 					articleDOM.querySelector("div.hero").innerHTML += HeroGame(
-						background_image
+						background_image,
+						website
 					);
 					articleDOM.querySelector("h1.title").innerHTML = name;
 					articleDOM.querySelector("p.release-date span").innerHTML = released;
 					articleDOM.querySelector("p.description").innerHTML = description;
 					articleDOM.querySelector("p.rating span").innerHTML = rating;
-					articleDOM.querySelector("p.website span").innerHTML = website;
+					articleDOM.querySelector("#checkwebsite").innerHTML = website;
 					articleDOM.querySelector(
 						"p.ratings_count span"
 					).innerHTML = ratings_count;
@@ -71,7 +73,7 @@ const PageDetail = (argument) => {
 				});
 		};
 
-		fetchGame("https://api.rawg.io/api/games/", cleanedArgument);
+		fetchGame("http://api.rawg.io/api/games/", cleanedArgument);
 	};
 
 	const render = () => {
@@ -88,11 +90,10 @@ const PageDetail = (argument) => {
 			<p class="platforms whitetext ml-5"> <span></span></p>
 			<p class="genres whitetext ml-5"> Genres:<span></span></p>
 			<p class="developers whitetext ml-5"> Developer:<span></span></p>
-			<p class="website whitetext ml-5"> Game website: <span></span></p>
-			<p class="stores whitetext ml-5"> Stores: <span></span></p>
 			<p class="publishers whitetext ml-5"> Publishers: <span></span></p>
-			<div class="clip" > </div>
-		  </div>
+			<p class="stores whitetext ml-5"> Stores: <span></span></p>
+			<div class="clip"> </div>
+			<div class="thumbnail" > </div>		  </div>
 		  </div>
 		</section>
 	  `;
@@ -104,3 +105,8 @@ const PageDetail = (argument) => {
 };
 
 export { PageDetail };
+
+// document.querySelector(".jumbotron").innerHTML = `
+// 					<a id="website" href="${website}" class="button d-flex flex-row justify-content-between">
+// 					  <p>Check website</p><i class="fas fa-play"></i>
+// 					</a>`;
