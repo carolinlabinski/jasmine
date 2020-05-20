@@ -9,7 +9,7 @@ describe("Sulfuras items", function () {
 });
 
 describe("Sulfuras items", function () {
-	it("Sulfuras n'as pas de date de peremption", function () {
+	it("Sulfuras n'as pas de date de péremption", function () {
 		var sulfuras = new Sulfuras("Aged Brie", 30, 50);
 		sulfuras.updateQuality();
 		expect(sulfuras.sellin).toBe(undefined);

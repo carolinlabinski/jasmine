@@ -20,7 +20,7 @@ describe("Normal item", function () {
 	it("La qualité n'a jamais plus de 50 points", function () {
 		var normalitem = new NormalItem("Mana", 10, 51);
 		normalitem.updateQuality();
-		expect(normalitem.quality).toBe(50);
+		expect(normalitem.quality).not.toBeGreaterThan(50);
 	});
 });
 
@@ -28,7 +28,7 @@ describe("Normal item", function () {
 	it("La qualité n'est jamais négative", function () {
 		var normalitem = new NormalItem("Mana", 10, -1);
 		normalitem.updateQuality();
-		expect(normalitem.quality).toBe(0);
+		expect(normalitem.quality).not.toBeLessThan(0);
 	});
 
 	describe("Normal item", function () {

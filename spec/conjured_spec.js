@@ -4,7 +4,7 @@ describe("Conjured items", function () {
 	it("Prefixe to add Conjured", function () {
 		var conjured = new ConjuredItem("Mana", 11, 20);
 		conjured.updateQuality();
-		expect(conjured.name).toBe("Conjured Mana");
+		expect(conjured.name).toMatch(/^Conjured.*/);
 	});
 });
 
@@ -28,7 +28,7 @@ describe("Conjured items", function () {
 	it("La qualité n'a jamais plus de 50 points", function () {
 		var conjured = new ConjuredItem("Mana", 11, 52);
 		conjured.updateQuality();
-		expect(conjured.quality).toBe(50);
+		expect(conjured.quality).not.toBeGreaterThan(50);
 	});
 });
 
@@ -36,6 +36,6 @@ describe("Conjured items", function () {
 	it("La qualité n'est jamais négative", function () {
 		var conjured = new ConjuredItem("Mana", 11, -5);
 		conjured.updateQuality();
-		expect(conjured.quality).toBe(0);
+		expect(conjured.quality).not.toBeLessThan(0);
 	});
 });
