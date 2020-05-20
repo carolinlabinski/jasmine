@@ -8,7 +8,7 @@ class BrieBackstage extends Item {
 	updateQuality() {
 		if (this.sellIn > 10) {
 			this.quality++;
-		} else if (this.sellIn > 0) {
+		} else if (this.sellIn > 0 && this.sellIn <= 5) {
 			this.quality += 3;
 		} else if (this.sellIn > 6) {
 			this.quality += 2;
