@@ -6,18 +6,19 @@ class ConjuredItem extends Item {
 	updateQuality() {
 		if (this.sellIn >= 0) {
 			this.quality -= 2;
-		}
-		if (this.sellIn < 0) {
+		} else {
 			this.quality -= 4;
 		}
 
 		if (this.quality > 50) {
 			this.quality = 50;
 		}
+
+		this.sellIn--;
+
 		if (this.quality < 0) {
 			this.quality = 0;
 		}
-		this.sellIn--;
 	}
 }
 export { ConjuredItem };
